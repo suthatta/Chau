@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,regular,500,700,900");
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+.main-header {
+    background: linear-gradient(0deg, #3f5494, #08c7a5);
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* .main-header .logo{
+    background-color: #000;
+    width: 100px;
+   
+} */
+
+
+/* .main-header .logo img{
+    width: 100%;
+    vertical-align: middle;
+} */
+
+.main-header .main-nav {
+    margin: auto;
+    display: flex;
+}
+
+.main-header .main-nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 1em;
+    position: relative;
+    transform: translateY(0px);
+    transition: .5s;
+}
+
+.main-header .main-nav a:hover {
+    transform: translateY(-5px);
+}
+
+.main-header .main-nav a:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: -5px;
+    height: 0%;
+    border-bottom: 1px solid #fff;
+    transition: .5s;
+}
+
+.main-header .main-nav a:hover:after {
+    left: 0%;
+    right: 0%;
+}
+
+.main-header .header-search {
+    display: flex;
+}
+
+.main-header .header-search button,
+.main-header .header-search input {
+    border: none;
+    background-color: #fff;
+    padding: 5px 10px;
+}
+
+.main-header .header-search button:focus,
+.main-header .header-search input:focus {
+    outline: none;
+}
+
+.main-header .header-search button {
+    background-color: #ccc;
+    border-radius: 0 200px 200px 0;
+}
+
+.main-header .header-search input {
+    border-radius: 200px 0 0 200px;
+}

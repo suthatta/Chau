@@ -1,0 +1,104 @@
+/* form css */
+
+* {
+    box-sizing: border-box;
+}
+
+.contact {
+    width: 650px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    margin: 1em;
+}
+
+.brand {
+    text-align: center;
+}
+
+.brand span {
+    color: #fff;
+}
+
+.wrapper {
+    box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+}
+
+.wrapper>* {
+    padding: 1em;
+}
+
+.contact {
+    background: #f9feff;
+}
+
+
+/* FORM STYLES */
+
+.contact form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.contact form label {
+    display: block;
+}
+
+.contact form p {
+    margin: 20px;
+}
+
+.contact form .full {
+    grid-column: 1 / 3;
+}
+
+.contact form button,
+.contact form input,
+.contact form textarea {
+    width: 50%;
+    padding: 1em;
+    border: 1px solid #c9e6ff;
+}
+
+.contact form button {
+    background: #c9e6ff;
+    border: 0;
+    text-transform: uppercase;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+    background: #92bde7;
+    color: #fff;
+    outline: 0;
+    transition: background-color 2s ease-out;
+}
+
+.alert {
+    text-align: center;
+    padding: 10px;
+    background: #79c879;
+    color: #fff;
+    margin-bottom: 10px;
+    display: none;
+}
+
+
+/* LARGE SCREENS */
+
+@media(min-width:700px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .wrapper>* {
+        padding: 2em;
+    }
+    .company-info h3,
+    .company-info ul,
+    .brand {
+        text-align: left;
+    }
+}
